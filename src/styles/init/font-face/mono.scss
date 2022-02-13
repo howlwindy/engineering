@@ -1,0 +1,96 @@
+@font-face {
+  font-weight: 100;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 100;
+  font-style: italic;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 200;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 200;
+  font-style: italic;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-LightItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 300;
+  font-style: italic;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-Italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: italic;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-SemiBoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 600;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 600;
+  font-style: italic;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-ExtraBoldItalic.ttf') format('truetype');
+}
+
+@layer components {
+  .mono {
+    font-family: 'JetBrainsMono';
+  }
+}

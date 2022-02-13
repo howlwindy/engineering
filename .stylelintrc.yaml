@@ -1,0 +1,37 @@
+# 退出码：
+# 1：未知错误。
+# 2：至少有一个具有"error"级别严重性的规则触发了至少一次违规。
+# 78：配置文件有问题。
+# 80：传递了文件glob，但没有找到文件。
+root: true
+extends:
+  - stylelint-config-standard # 包含idiomatic/google/airbnb/mdo的shared config
+  - stylelint-config-recommended-scss # 推荐的scss shared config
+  - stylelint-config-recommended-vue # 推荐的vue config；需要postcss-html
+  - stylelint-config-prettier # 先lint再prettier来解决lint和prettier的冲突
+  - stylelint-config-hudochenkov/full # order rules
+plugins:
+  - stylelint-scss # scss lint rules
+  - stylelint-order # 属性排序
+rules:
+  indentation: 2 # 2 space
+  string-quotes: single # 双引号
+  no-empty-source: null #
+  selector-max-type: 2 # 类型选择器上限
+  font-family-no-missing-generic-family-keyword: null # font-family是否需要通用字体
+  selector-class-pattern: null # elementui的css命名无法更改
+  at-rule-no-unknown: null
+  scss/at-rule-no-unknown: # tailwind关键词的忽略
+    - true
+    - ignoreAtRules:
+        - tailwind
+        - layer
+        - apply
+        - variants
+        - responsive
+        - screen
+        - function
+        - if
+        - each
+        - include
+        - mixin
